@@ -63,3 +63,10 @@
 ## 🤝 Vamos conversar?
 - Email: **SEUEMAIL@exemplo.com**
 - GitHub: https://github.com/Fernanda-Froes
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Fernanda-Froes/Fernanda-Froes/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Fernanda-Froes/Fernanda-Froes/output/snake.svg" />
+  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Fernanda-Froes/Fernanda-Froes/output/snake-dark.svg" />
+</picture>
+
