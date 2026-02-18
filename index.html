@@ -3,10 +3,113 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Minha Página</title>
+  <title>Seu Nome — Portfólio</title>
+  <meta name="description" content="Portfólio e projetos no GitHub." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Olá, GitHub Pages!</h1>
-  <p>Meu site está no ar.</p>
+  <header class="wrap header">
+    <div>
+      <p class="kicker">Olá, eu sou</p>
+      <h1>Seu Nome</h1>
+      <p class="subtitle">
+        Ciência da Computação • IA / Visão / Segurança • UFU
+      </p>
+
+      <div class="actions">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn" href="https://github.com/SEUUSUARIO" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="mailto:seuemail@exemplo.com">Contato</a>
+      </div>
+
+      <div class="chips">
+        <span class="chip" data-copy="Python">Python</span>
+        <span class="chip" data-copy="C++">C++</span>
+        <span class="chip" data-copy="Java">Java</span>
+        <span class="chip" data-copy="ML/SER">ML/SER</span>
+      </div>
+    </div>
+
+    <div class="card hero-card">
+      <div class="stat">
+        <span class="label">Agora</span>
+        <span class="value" id="nowText">carregando…</span>
+      </div>
+      <div class="stat">
+        <span class="label">Foco</span>
+        <span class="value">Projetos com resultado real</span>
+      </div>
+      <div class="stat">
+        <span class="label">Diferencial</span>
+        <span class="value">Didática + engenharia</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" id="projetos">
+      <h2>Projetos em destaque</h2>
+      <p class="muted">Escolha 3–6 projetos e escreva impacto e stack (não só “o que faz”).</p>
+
+      <div class="grid">
+        <article class="card project">
+          <h3>Projeto 1 — Nome Curto</h3>
+          <p>Uma linha de “pra que serve” + resultado mensurável (ex.: -30% tempo, +X acurácia).</p>
+          <ul class="tags">
+            <li>Python</li><li>Sklearn</li><li>Audio</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/SEUUSUARIO/projeto1" target="_blank" rel="noreferrer">Repo</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Projeto 2 — Nome Curto</h3>
+          <p>O que é + por que importa. Se tiver gráfico/print no README, melhor ainda.</p>
+          <ul class="tags">
+            <li>C++</li><li>PostgreSQL</li><li>FAISS</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/SEUUSUARIO/projeto2" target="_blank" rel="noreferrer">Repo</a>
+            <a href="#" target="_blank" rel="noreferrer">Paper/Doc</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Projeto 3 — Nome Curto</h3>
+          <p>Mostre o “antes/depois” ou a motivação real (problema que você resolveu).</p>
+          <ul class="tags">
+            <li>Java</li><li>RMI</li><li>Distribuído</li>
+          </ul>
+          <div class="links">
+            <a href="https://github.com/SEUUSUARIO/projeto3" target="_blank" rel="noreferrer">Repo</a>
+            <a href="#" target="_blank" rel="noreferrer">Vídeo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sobre</h2>
+      <div class="card">
+        <p>
+          Escreva 5–7 linhas: no que você é bom, que tipo de problema você gosta,
+          e o que você quer agora (estágio/primeiro emprego).
+        </p>
+        <p class="muted">
+          Dica: mencione 2 áreas + 1 prova social (monitoria, DACIN, projetos, publicação, etc).
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Seu Nome</span>
+      <span class="muted">Feito com GitHub Pages</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast">Copiado!</div>
+  <script src="script.js"></script>
 </body>
 </html>
